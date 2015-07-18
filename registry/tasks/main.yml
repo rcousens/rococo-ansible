@@ -24,9 +24,9 @@
     state: started
     restart_policy: always
     env:
-      - REGISTRY_HTTP_TLS_CERTIFICATE: /certs/rococo_io.crt
-      - REGISTRY_HTTP_TLS_KEY: /certs/rococo_io.key
-      - REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /var/lib/registry
+      REGISTRY_HTTP_TLS_CERTIFICATE: /certs/rococo_io.crt
+      REGISTRY_HTTP_TLS_KEY: /certs/rococo_io.key
+      REGISTRY_STORAGE_FILESYSTEM_ROOTDIRECTORY: /var/lib/registry
     volumes:
       - /data:/var/lib/registry
       - /certs:/certs
