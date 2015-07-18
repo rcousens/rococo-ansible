@@ -24,6 +24,7 @@ apt_repository: deb https://get.docker.com/ubuntu docker main
 #  -H tcp://0.0.0.0:2375
 #  --log-level=debug
 #docker_opts: "-H tcp://0.0.0.0:4243 -H unix:///var/run/docker.sock"
+docker_opts: ""
 
 # List of users to be added to 'docker' system group (disabled by default)
 # SECURITY WARNING:
